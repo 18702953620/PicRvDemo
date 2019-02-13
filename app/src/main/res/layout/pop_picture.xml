@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="选择日期"
+        android:textColor="#969696"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+            android:id="@+id/wp_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:wheel_item_text_color="#999999"
+            app:wheel_item_text_size="18sp"
+            app:wheel_selected_item_text_color="#636363" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="年"
+            android:textSize="18sp" />
+
+        <com.aigestudio.wheelpicker.widgets.WheelMonthPicker
+            android:id="@+id/wp_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:wheel_item_text_color="#999999"
+            app:wheel_item_text_size="18sp"
+            app:wheel_selected_item_text_color="#636363" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="月"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView style="@style/line_f3f3f3" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="确定"
+        android:textColor="#151619"
+        android:textSize="16sp" />
+</LinearLayout>
