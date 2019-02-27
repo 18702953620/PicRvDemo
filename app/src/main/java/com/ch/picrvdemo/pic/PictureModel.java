@@ -1,4 +1,4 @@
-package com.ch.picrvdemo;
+package com.ch.picrvdemo.pic;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pic.PicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pictrues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f7f8fa"
+            android:nestedScrollingEnabled="false" />
+
+        <com.ch.picrvdemo.widget.StickyHeadContainer
+            android:id="@+id/shc_pictrues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_picture_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:drawableRight="@mipmap/unfold"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="2018年11月"
+                    android:textColor="#969696"
+                    android:textSize="16sp" />
+
+                <TextView style="@style/line_f3f3f3" />
+            </LinearLayout>
+
+
+        </com.ch.picrvdemo.widget.StickyHeadContainer>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

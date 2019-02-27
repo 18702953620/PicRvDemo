@@ -1,4 +1,4 @@
-package com.ch.picrvdemo;
+package com.ch.picrvdemo.pic;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.ch.picrvdemo.R;
 import com.ch.picrvdemo.widget.FullSpanUtil;
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;

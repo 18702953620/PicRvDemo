@@ -1,4 +1,4 @@
-package com.ch.picrvdemo;
+package com.ch.picrvdemo.pic;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
